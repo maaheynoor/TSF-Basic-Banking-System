@@ -3,7 +3,7 @@
         <title>
         Basic Banking System
         </title>
-        
+
         <link rel="icon" href="logo.png">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="js/script.js"></script>
@@ -15,7 +15,7 @@
             }
             h1,h2,h3,h4,h5,h6{
                 font-family:Georgia;
-            }       
+            }
             .table-dark{
                 background-color:#080f48;
             }
@@ -34,6 +34,14 @@
             }
             .h-100:hover{
                 transform:scale(1.1);
+            }
+            footer {
+              position: absolute;
+              bottom: 0;
+              padding:20px 0 20px 0;
+              width:100%;
+              background-color: #dedede;
+              text-align:center;
             }
         </style>
     </head>
@@ -61,6 +69,3 @@
                 </ul>
             </div>
         </nav>
-
-
-

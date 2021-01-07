@@ -1,4 +1,4 @@
-<?php 
+<?php
 include 'header.php';
 ?>
 <div class="container">
@@ -21,11 +21,11 @@ include 'header.php';
             </tr>
         </thead>
         <tbody>
-        <?php 
+        <?php
         include 'db/config.php';
         $sql ="SELECT  t.sender,c1.name as sendername,t.receiver,c2.name as receivername,t.amount,t.datetime,t.status
         FROM transactions t
-        JOIN customers c1 ON t.sender=c1.id 
+        JOIN customers c1 ON t.sender=c1.id
         JOIN customers c2 ON t.receiver=c2.id ";
         $query =mysqli_query($con, $sql);
         while($row = mysqli_fetch_assoc($query))
@@ -62,8 +62,8 @@ include 'header.php';
 
         </tbody>
     </table>
-
 </div>
-<?php 
+</div>
+<?php
 include 'footer.php';
 ?>

@@ -1,9 +1,9 @@
-<?php 
+<?php
 include 'header.php';
 ?>
 <div class="container-fluid">
 <div class="row">
-    
+
     <div class="col-lg-6 order-lg-1 order-2">
         <h1>Simple Basic Banking System</h1>
         <div class="row ">
@@ -36,8 +36,8 @@ include 'header.php';
     <div class="col-lg-6 order-lg-2 order-1">
     <img src="images/home.png" width="100%">
     </div>
-
 </div>
-<?php 
+</div>
+<?php
 include 'footer.php';
 ?>

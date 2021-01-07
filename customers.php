@@ -1,4 +1,4 @@
-<?php 
+<?php
 include 'header.php';
 ?>
 
@@ -19,7 +19,7 @@ include 'header.php';
             </tr>
         </thead>
         <tbody>
-        <?php 
+        <?php
         include 'db/config.php';
         $sql ="select * from customers";
         $query =mysqli_query($con, $sql);
@@ -31,20 +31,20 @@ include 'header.php';
             <td><?php echo $row['name'];?></td>
             <td><?php echo $row['email'];?></td>
             <td><i class="fa fa-inr" aria-hidden="true"></i> <?php echo $row['balance'];?></td>
-            
+
             <?php
             if(isset($transfer))
             echo '<td><a class="btn btn-primary" href="transfer.php?id='. $row['id'].'">Transact</a></td>';
             ?>
-            
+
             </tr>
         <?php }?>
 
         </tbody>
     </table>
-
+</div>
 </div>
 
-<?php 
+<?php
 include 'footer.php';
 ?>
